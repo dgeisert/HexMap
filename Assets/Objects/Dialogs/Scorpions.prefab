@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4469289175032056199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 193011841272018126}
+  - component: {fileID: 3650203855832404530}
+  m_Layer: 0
+  m_Name: Scorpions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &193011841272018126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469289175032056199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3650203855832404530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4469289175032056199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: You find an area that might be good for hunting small game.
+  option1: Hunt
+  option2: Keep Going
+  option3: 
+  option4: 
+  option1Results:
+  - rewards:
+    - type: person
+      amount: -1
+    text: While hunting someone is stung by a scorpion and dies.
+    button: Rest in Peace
+  - rewards:
+    - type: water
+      amount: 5
+    text: You manage to hunt well and get plenty of food.
+    button: Success
+  option2Results:
+  - rewards: []
+    text: You move along
+    button: Keep Going
+  option3Results: []
+  option4Results: []

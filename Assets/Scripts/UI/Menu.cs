@@ -12,8 +12,10 @@ public class Menu : MonoBehaviour
     public UnityEngine.Audio.AudioMixer mixer;
     public Image NoMusic;
     public Image NoSound;
+    public Wanderers wanderers;
     void Start()
     {
+        wanderers.SetMenu(2, 3);
         OpenMenu();
     }
     public void PlayGame()

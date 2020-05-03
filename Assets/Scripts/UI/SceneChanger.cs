@@ -21,6 +21,7 @@ public class SceneChanger : MonoBehaviour
     public UnityEngine.UI.Image blackout;
     public void Start()
     {
+        Application.targetFrameRate = 60;
         Instance = this;
         loadScene(Scenes.MainMenu);
         SceneManager.sceneLoaded += OnSceneLoaded;

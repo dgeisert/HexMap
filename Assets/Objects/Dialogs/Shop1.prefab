@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7256547939161070006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6822030818516854214}
+  - component: {fileID: 5186573888885202008}
+  m_Layer: 0
+  m_Name: Shop1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6822030818516854214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256547939161070006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5186573888885202008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256547939161070006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: The merchants have some wares for sale
+  option1: 1 camel for 15 money
+  option2: 10 water for 5 money
+  option3: 2 camels for 25 money
+  option4: Directions for 10 money
+  option1Results:
+  - rewards:
+    - type: camel
+      amount: 1
+    - type: money
+      amount: -15
+    text: Thank you, come again.
+    button: Move along
+  option2Results:
+  - rewards:
+    - type: water
+      amount: 10
+    - type: money
+      amount: -5
+    text: Thank you, come again.
+    button: Move along
+  option3Results:
+  - rewards:
+    - type: camel
+      amount: 2
+    - type: money
+      amount: -25
+    text: Thank you, come again.
+    button: Move along
+  option4Results:
+  - rewards:
+    - type: money
+      amount: -10
+    text: direction
+    button: Move along

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5206839445232562724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427292941783798082}
+  - component: {fileID: 769111679016855708}
+  m_Layer: 0
+  m_Name: TravellingCaravan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1427292941783798082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206839445232562724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &769111679016855708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206839445232562724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: You come across a travelling caravan.  They are willing to trade.
+  option1: Buy 5 Water for 3 Money
+  option2: Buy 1 Camel for 10 Water
+  option3: Sell 1 Camel for 10 Money
+  option4: Sell 1 Camel for 15 Water
+  option1Results:
+  - rewards:
+    - type: money
+      amount: -3
+    - type: water
+      amount: 5
+    text: '"It was a pleasure doing business"'
+    button: Pleasure was mine
+  option2Results:
+  - rewards:
+    - type: camel
+      amount: 1
+    - type: water
+      amount: -10
+    text: '"It was a pleasure doing business"'
+    button: Pleasure was mine
+  option3Results:
+  - rewards:
+    - type: camel
+      amount: -1
+    - type: money
+      amount: 10
+    text: '"It was a pleasure doing business"'
+    button: Pleasure was mine
+  option4Results:
+  - rewards:
+    - type: camel
+      amount: -1
+    - type: water
+      amount: 15
+    text: '"It was a pleasure doing business"'
+    button: Pleasure was mine

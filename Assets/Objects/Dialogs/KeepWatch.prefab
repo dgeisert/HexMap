@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1843337262064450141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 448611360766782890}
+  - component: {fileID: 6905495784752362273}
+  m_Layer: 0
+  m_Name: KeepWatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &448611360766782890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843337262064450141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6905495784752362273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843337262064450141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Everyone wants to take a rest.  Should you put someone on watch?
+  option1: Keep Watch
+  option2: Don't Keep Watch
+  option3: 
+  option4: 
+  option1Results:
+  - rewards: []
+    text: You keep watch, but nothing happens
+    button: Keep Going
+  option2Results:
+  - rewards:
+    - type: camel
+      amount: -1
+    - type: water
+      amount: -5
+    text: In the night, Theives steal much of your belongings
+    button: Oh well
+  - rewards:
+    - type: water
+      amount: 3
+    text: You sleep well and everyone feels great.
+    button: Nice
+  option3Results: []
+  option4Results: []

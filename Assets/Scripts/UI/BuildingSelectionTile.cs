@@ -15,35 +15,19 @@ public class BuildingSelectionTile : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(hotKey.ToString()))
+        if (Input.GetKeyDown(hotKey.ToString()))
         {
             OnClick();
         }
     }
     public void Start()
     {
-        cost.text = "$" + newBuilding.cost.ToString();
         hotKeyTexts.text = hotKey.ToString();
-        if(newBuilding.type == BuildingType.MONEY)
-        {
-            OnClick();
-        }
     }
 
     public void OnClick()
-    {
-        Game.Instance.clickBuilding = newBuilding;
-        foreach (BuildingSelectionTile bst in otherButtons)
-        {
-            bst.Deselect();
-        }
-        backing.color = selectColor;
-        outline.enabled = true;
-    }
+    { }
 
     public void Deselect()
-    {
-        outline.enabled = false;
-        backing.color = Color.white;
-    }
+    { }
 }

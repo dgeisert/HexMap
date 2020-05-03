@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3566354048761484076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 287620589814653278}
+  - component: {fileID: 5558534997608494490}
+  m_Layer: 0
+  m_Name: WildCamels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &287620589814653278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566354048761484076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5558534997608494490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3566354048761484076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: You see the tracks for wild camels.  You think if you find them you'll be
+    able to use one or two as pack animals.
+  option1: Search for the Camels
+  option2: Move Along
+  option3: 
+  option4: 
+  option1Results:
+  - rewards:
+    - type: camel
+      amount: 1
+    text: You find the camels.  You manage to separate one from the group and luckily
+      get it under control.
+    button: Success
+  - rewards:
+    - type: camel
+      amount: 2
+    - type: water
+      amount: -2
+    text: You find the camels, and two of them seem to be wearing colars.  They respond
+      well to your advances, but are very thirsty.
+    button: Such Luck
+  - rewards:
+    - type: person
+      amount: -1
+    text: You find the camels.  The person who thought they could tame one is kicked
+      and dies.
+    button: Rest in Peace.
+  - rewards:
+    - type: water
+      amount: -1
+    text: You wander for a long time and find nothing.
+    button: Oh well
+  option2Results:
+  - rewards: []
+    text: You keep moving, not wanting to delay on a wild chase.
+    button: Move along
+  option3Results: []
+  option4Results: []

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4300867439825145775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5478130088023823877}
+  - component: {fileID: 3414086487855384806}
+  m_Layer: 0
+  m_Name: HauntedRuins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5478130088023823877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300867439825145775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3414086487855384806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300867439825145775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: You come across some creepy ruins.  There might be somethign worth looting.
+  option1: Look for treasure
+  option2: Move along
+  option3: 
+  option4: 
+  option1Results:
+  - rewards:
+    - type: person
+      amount: -1
+    text: You find a tomb, and force open the door.  As you walk in the floor gives
+      way and you land on spikes and die.
+    button: Unlucky
+  - rewards:
+    - type: money
+      amount: 10
+    text: You find a tomb, and force open the door.  Inside you find some gold coins.
+    button: Success
+  option2Results:
+  - rewards: []
+    text: You leave and nothing happens.
+    button: Move along
+  - rewards:
+    - type: money
+      amount: 5
+    text: As you leave you find a gold coin glinting in the sand.
+    button: Lucky!
+  option3Results: []
+  option4Results: []

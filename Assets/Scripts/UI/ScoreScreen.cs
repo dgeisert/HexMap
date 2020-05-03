@@ -8,19 +8,15 @@ public class ScoreScreen : MonoBehaviour
     public TextMeshProUGUI scoreText, victoryText;
     public GameObject victoryDisplay;
     public GameObject defeatDisplay;
-    public void EndGame(bool victory = false)
+    public void EndGame(bool victory = false, string text = "")
     {
+        Game.Instance.inGameUI.Close();
+        Game.InDialog = true;
         gameObject.SetActive(true);
         victoryDisplay.gameObject.SetActive(victory);
-        if (Game.Score == 0)
-        {
-            victoryText.text = "You need to water your trees!";
-        }
-        else
-        {
-            victoryText.text = "Game Over";
-        }
+        victoryText.text = text;
         defeatDisplay.gameObject.SetActive(!victory);
+        Game.Score += victory ? 20000 : -20000;
         scoreText.text = Game.Score.ToString("#,#");
     }
 

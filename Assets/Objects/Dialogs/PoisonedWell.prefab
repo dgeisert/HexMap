@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2416801715877077736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3053544570103623691}
+  - component: {fileID: 6809901577641060221}
+  m_Layer: 0
+  m_Name: PoisonedWell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3053544570103623691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2416801715877077736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.15438524, z: 0.017499998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6809901577641060221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2416801715877077736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f559f91a11b54783b2df7ab3efcefbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: The water from this well looks questionable.
+  option1: Drink
+  option2: Don't Drink
+  option3: 
+  option4: 
+  option1Results:
+  - rewards:
+    - type: water
+      amount: 10
+    text: The water taste bad, but it is fine for consumption
+    button: Keep Going
+  - rewards:
+    - type: person
+      amount: -1
+    text: The well was poisoned, the first person who drinks it dies.
+    button: Rest In Peace
+  - rewards:
+    - type: person
+      amount: -1
+    - type: water
+      amount: 10
+    text: The water was fine for a bit, but had parasites.  One person dies, but
+      the others aren't affected.
+    button: Rest In Peace
+  option2Results:
+  - rewards: []
+    text: You think better of trying the risky water, and keep moving.
+    button: Keep Going
+  option3Results: []
+  option4Results: []
